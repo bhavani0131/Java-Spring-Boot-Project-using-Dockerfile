@@ -24,7 +24,7 @@ jobs:
       - name: Build for SonarQube
         run: |
           cd backend
-            mvn clean verify -DskipTests
+          mvn clean verify -DskipTests
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
